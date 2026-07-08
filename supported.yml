@@ -1,0 +1,63 @@
+datasources:
+  - model_name: app_group
+    oas_endpoint: /apps/management.eda.nokia.com
+    oas_schema: AppGroup
+  - model_name: resource_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1
+    oas_schema: ResourceList
+  - model_name: ftp_server_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers
+    oas_schema: com.nokia.eda.management.v1.FTPServerList
+  - model_name: ftp_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers/{name}
+    oas_schema: com.nokia.eda.management.v1.FTPServer
+  - model_name: grpc_server_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/grpcservers
+    oas_schema: com.nokia.eda.management.v1.GRPCServerList
+  - model_name: grpc_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/grpcservers/{name}
+    oas_schema: com.nokia.eda.management.v1.GRPCServer
+  - model_name: http_server_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers
+    oas_schema: com.nokia.eda.management.v1.HTTPServerList
+  - model_name: http_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}
+    oas_schema: com.nokia.eda.management.v1.HTTPServer
+  - model_name: ssh_server_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers
+    oas_schema: com.nokia.eda.management.v1.SSHServerList
+  - model_name: ssh_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/{name}
+    oas_schema: com.nokia.eda.management.v1.SSHServer
+
+resources:
+  - model_name: ftp_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers
+    oas_schema: com.nokia.eda.management.v1.FTPServer
+  - model_name: grpc_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/grpcservers
+    oas_schema: com.nokia.eda.management.v1.GRPCServer
+  - model_name: http_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers
+    oas_schema: com.nokia.eda.management.v1.HTTPServer
+  - model_name: ssh_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers
+    oas_schema: com.nokia.eda.management.v1.SSHServer
+
+qualified:
+  datasources:
+    - oas_schema: IntentTargets
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers/{name}/_targets
+    - oas_schema: ResourceHistory
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers/{name}/_revs
+    - oas_schema: UIResult
+      get: /apps/management.eda.nokia.com/v1/_ui/{pathname}
+    - oas_schema: com.nokia.eda.management.v1.FTPServer_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/ftpservers/_deleted
+    - oas_schema: com.nokia.eda.management.v1.GRPCServer_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/grpcservers/_deleted
+    - oas_schema: com.nokia.eda.management.v1.HTTPServer_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/_deleted
+    - oas_schema: com.nokia.eda.management.v1.SSHServer_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/_deleted
+  resources:
