@@ -104,33 +104,33 @@ func SshServerListDataSourceSchema(ctx context.Context) schema.Schema {
 						"spec": schema.SingleNestedAttribute{
 							Attributes: map[string]schema.Attribute{
 								"enable_password_authentication": schema.BoolAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.",
 									MarkdownDescription: "Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.",
 								},
 								"enabled": schema.BoolAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Enable the SSH server.",
 									MarkdownDescription: "Enable the SSH server.",
 								},
 								"port": schema.Int64Attribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Port for the SSH server to listen on.",
 									MarkdownDescription: "Port for the SSH server to listen on.",
 								},
 								"router": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Router to associate the server with.",
 									MarkdownDescription: "Router to associate the server with.",
 								},
 								"router_kind": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "The Kind of the router for the server.",
 									MarkdownDescription: "The Kind of the router for the server.",
 								},
 								"router_selectors": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 									MarkdownDescription: "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 								},
@@ -140,7 +140,7 @@ func SshServerListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "SSHServerSpec defines the desired state of SSHServer",
 							MarkdownDescription: "SSHServerSpec defines the desired state of SSHServer",
 						},

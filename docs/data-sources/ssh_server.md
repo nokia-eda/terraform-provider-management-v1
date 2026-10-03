@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) SSHServerSpec defines the desired state of SSHServer (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,20 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) SSHServerSpec defines the desired state of SSHServer (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) SSHServerStatus defines the observed state of SSHServer (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `enable_password_authentication` (Boolean) Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.
-- `enabled` (Boolean) Enable the SSH server.
-- `port` (Number) Port for the SSH server to listen on.
-- `router` (String) Router to associate the server with.
-- `router_kind` (String) The Kind of the router for the server.
-- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -75,6 +62,19 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `enable_password_authentication` (Boolean) Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.
+- `enabled` (Boolean) Enable the SSH server.
+- `port` (Number) Port for the SSH server to listen on.
+- `router` (String) Router to associate the server with.
+- `router_kind` (String) The Kind of the router for the server.
+- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
 
 
 <a id="nestedatt--status"></a>

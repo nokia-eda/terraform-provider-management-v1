@@ -269,6 +269,10 @@ func (p *managementProvider) DataSources(ctx context.Context) []func() datasourc
 		NewHttpServerDataSource,
 		NewHttpServerListDataSource,
 		NewResourceListDataSource,
+		NewSnmpServerDataSource,
+		NewSnmpServerListDataSource,
+		NewSnmpServerStateDataSource,
+		NewSnmpServerStateListDataSource,
 		NewSshServerDataSource,
 		NewSshServerListDataSource,
 	}
@@ -279,6 +283,8 @@ func (p *managementProvider) Resources(ctx context.Context) []func() resource.Re
 		NewFtpServerResource,
 		NewGrpcServerResource,
 		NewHttpServerResource,
+		NewSnmpServerResource,
+		NewSnmpServerStateResource,
 		NewSshServerResource,
 	}
 }

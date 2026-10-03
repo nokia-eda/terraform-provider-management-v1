@@ -104,23 +104,23 @@ func FtpServerListDataSourceSchema(ctx context.Context) schema.Schema {
 						"spec": schema.SingleNestedAttribute{
 							Attributes: map[string]schema.Attribute{
 								"enabled": schema.BoolAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Enable the FTP server.",
 									MarkdownDescription: "Enable the FTP server.",
 								},
 								"router": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "Router to associate the server with.",
 									MarkdownDescription: "Router to associate the server with.",
 								},
 								"router_kind": schema.StringAttribute{
-									Optional:            true,
+									Computed:            true,
 									Description:         "The Kind of the router for the server.",
 									MarkdownDescription: "The Kind of the router for the server.",
 								},
 								"router_selectors": schema.ListAttribute{
 									ElementType:         types.StringType,
-									Optional:            true,
+									Computed:            true,
 									Description:         "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 									MarkdownDescription: "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 								},
@@ -130,7 +130,7 @@ func FtpServerListDataSourceSchema(ctx context.Context) schema.Schema {
 									AttrTypes: SpecValue{}.AttributeTypes(ctx),
 								},
 							},
-							Optional:            true,
+							Computed:            true,
 							Description:         "FTPServerSpec defines the desired state of FTPServer",
 							MarkdownDescription: "FTPServerSpec defines the desired state of FTPServer",
 						},

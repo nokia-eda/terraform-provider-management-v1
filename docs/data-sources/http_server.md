@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) HTTPServerSpec defines the desired state of HTTPServer (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,23 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) HTTPServerSpec defines the desired state of HTTPServer (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) HTTPServerStatus defines the observed state of HTTPServer (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `enable_authentication` (Boolean) Enable authentication for the HTTP(s) server.
-- `enabled` (Boolean) Enable the HTTP API server.
-- `port` (Number) Port for the server to listen on.
-- `protocol` (String) Specifies the protocol to use.
-- `router` (String) Router to associate the server with.
-- `router_kind` (String) The Kind of the router for the server.
-- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
-- `session_limit` (Number) Maximum number of HTTP(s) sessions.
-- `tls_profile` (String) TLS profile name to use with HTTPS protocol.
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -78,6 +62,22 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `enable_authentication` (Boolean) Enable authentication for the HTTP(s) server.
+- `enabled` (Boolean) Enable the HTTP API server.
+- `port` (Number) Port for the server to listen on.
+- `protocol` (String) Specifies the protocol to use.
+- `router` (String) Router to associate the server with.
+- `router_kind` (String) The Kind of the router for the server.
+- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
+- `session_limit` (Number) Maximum number of HTTP(s) sessions.
+- `tls_profile` (String) TLS profile name to use with HTTPS protocol.
 
 
 <a id="nestedatt--status"></a>

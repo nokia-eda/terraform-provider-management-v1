@@ -102,48 +102,48 @@ func HttpServerDataSourceSchema(ctx context.Context) schema.Schema {
 			"spec": schema.SingleNestedAttribute{
 				Attributes: map[string]schema.Attribute{
 					"enable_authentication": schema.BoolAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Enable authentication for the HTTP(s) server.",
 						MarkdownDescription: "Enable authentication for the HTTP(s) server.",
 					},
 					"enabled": schema.BoolAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Enable the HTTP API server.",
 						MarkdownDescription: "Enable the HTTP API server.",
 					},
 					"port": schema.Int64Attribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Port for the server to listen on.",
 						MarkdownDescription: "Port for the server to listen on.",
 					},
 					"protocol": schema.StringAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Specifies the protocol to use.",
 						MarkdownDescription: "Specifies the protocol to use.",
 					},
 					"router": schema.StringAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Router to associate the server with.",
 						MarkdownDescription: "Router to associate the server with.",
 					},
 					"router_kind": schema.StringAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "The Kind of the router for the server.",
 						MarkdownDescription: "The Kind of the router for the server.",
 					},
 					"router_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
-						Optional:            true,
+						Computed:            true,
 						Description:         "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 						MarkdownDescription: "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 					},
 					"session_limit": schema.Int64Attribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "Maximum number of HTTP(s) sessions.",
 						MarkdownDescription: "Maximum number of HTTP(s) sessions.",
 					},
 					"tls_profile": schema.StringAttribute{
-						Optional:            true,
+						Computed:            true,
 						Description:         "TLS profile name to use with HTTPS protocol.",
 						MarkdownDescription: "TLS profile name to use with HTTPS protocol.",
 					},
@@ -153,7 +153,7 @@ func HttpServerDataSourceSchema(ctx context.Context) schema.Schema {
 						AttrTypes: SpecValue{}.AttributeTypes(ctx),
 					},
 				},
-				Optional:            true,
+				Computed:            true,
 				Description:         "HTTPServerSpec defines the desired state of HTTPServer",
 				MarkdownDescription: "HTTPServerSpec defines the desired state of HTTPServer",
 			},

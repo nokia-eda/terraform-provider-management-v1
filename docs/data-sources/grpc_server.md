@@ -23,7 +23,6 @@ description: |-
 ### Optional
 
 - `hash` (String) resource content will be returned as it was at the time of this git hash
-- `spec` (Attributes) GRPCServerSpec defines the desired state of GRPCServer (see [below for nested schema](#nestedatt--spec))
 
 ### Read-Only
 
@@ -32,36 +31,8 @@ description: |-
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--metadata))
+- `spec` (Attributes) GRPCServerSpec defines the desired state of GRPCServer (see [below for nested schema](#nestedatt--spec))
 - `status` (Attributes) GRPCServerStatus defines the observed state of GRPCServer (see [below for nested schema](#nestedatt--status))
-
-<a id="nestedatt--spec"></a>
-### Nested Schema for `spec`
-
-Optional:
-
-- `enabled` (Boolean) Enable the gRPC server.
-- `gnmi_server` (Attributes) gNMI server specific configuration. (see [below for nested schema](#nestedatt--spec--gnmi_server))
-- `insecure` (Boolean) Allow insecure (non-TLS) connections to the gRPC server.
-- `max_concurrent_streams` (Number) Maximum number of concurrent streams for the gRPC server.
-- `metadata_authentication` (Boolean) Enable metadata authentication for the gRPC server.
-- `port` (Number) Port for the gRPC server to listen on.
-- `rate_limit_calls_per_minute` (Number) Rate limit for the gRPC server, in calls per minute.
-- `router` (String) Router to associate the server with.
-- `router_kind` (String) The Kind of the router for the server.
-- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
-- `services` (List of String) Enabled gRPC services.
-- `session_limit` (Number) Maximum number of gRPC sessions.
-- `tls_profile` (String) TLS profile name.
-- `yang_models` (String) YANG models to be used by the gRPC server.
-
-<a id="nestedatt--spec--gnmi_server"></a>
-### Nested Schema for `spec.gnmi_server`
-
-Optional:
-
-- `auto_save` (Boolean) Enable auto-save of configuration changes made via gNMI.
-
-
 
 <a id="nestedatt--alarms"></a>
 ### Nested Schema for `alarms`
@@ -91,6 +62,35 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--spec"></a>
+### Nested Schema for `spec`
+
+Read-Only:
+
+- `enabled` (Boolean) Enable the gRPC server.
+- `gnmi_server` (Attributes) gNMI server specific configuration. (see [below for nested schema](#nestedatt--spec--gnmi_server))
+- `insecure` (Boolean) Allow insecure (non-TLS) connections to the gRPC server.
+- `max_concurrent_streams` (Number) Maximum number of concurrent streams for the gRPC server.
+- `metadata_authentication` (Boolean) Enable metadata authentication for the gRPC server.
+- `port` (Number) Port for the gRPC server to listen on.
+- `rate_limit_calls_per_minute` (Number) Rate limit for the gRPC server, in calls per minute.
+- `router` (String) Router to associate the server with.
+- `router_kind` (String) The Kind of the router for the server.
+- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
+- `services` (List of String) Enabled gRPC services.
+- `session_limit` (Number) Maximum number of gRPC sessions.
+- `tls_profile` (String) TLS profile name.
+- `yang_models` (String) YANG models to be used by the gRPC server.
+
+<a id="nestedatt--spec--gnmi_server"></a>
+### Nested Schema for `spec.gnmi_server`
+
+Read-Only:
+
+- `auto_save` (Boolean) Enable auto-save of configuration changes made via gNMI.
+
 
 
 <a id="nestedatt--status"></a>

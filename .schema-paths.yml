@@ -14,6 +14,12 @@ intent_targets:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}/_targets
       method: GET
   - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}/_targets
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}/_targets
+      method: GET
+  - read:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/{name}/_targets
       method: GET
 
@@ -28,6 +34,12 @@ k8_s_topology_request:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}/_topology
       method: POST
   - create:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}/_topology
+      method: POST
+  - create:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}/_topology
+      method: POST
+  - create:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/{name}/_topology
       method: POST
 
@@ -40,6 +52,12 @@ resource_history:
       method: GET
   - read:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}/_revs
+      method: GET
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}/_revs
       method: GET
   - read:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/{name}/_revs
@@ -59,6 +77,12 @@ status:
       method: DELETE
   - delete:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}
+      method: DELETE
+  - delete:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}
       method: DELETE
   - delete:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/{name}
@@ -159,6 +183,66 @@ com.nokia.eda.management.v1.http_server_deleted_resources:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/_deleted
       method: GET
 
+com.nokia.eda.management.v1.snmp_server:
+  - create:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}
+      method: PUT
+  - update:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}
+      method: PATCH
+
+com.nokia.eda.management.v1.snmp_server_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers
+      method: DELETE
+  - read:
+      path: /apps/management.eda.nokia.com/v1/snmpservers
+      method: GET
+
+com.nokia.eda.management.v1.snmp_server_state:
+  - create:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates
+      method: POST
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}
+      method: GET
+  - update:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}
+      method: PUT
+  - update:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}
+      method: PATCH
+
+com.nokia.eda.management.v1.snmp_server_state_list:
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates
+      method: GET
+  - delete:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates
+      method: DELETE
+  - read:
+      path: /apps/management.eda.nokia.com/v1/snmpserverstates
+      method: GET
+
+com.nokia.eda.management.v1.snmp_server_state_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/_deleted
+      method: GET
+
+com.nokia.eda.management.v1.snmp_server_deleted_resources:
+  - read:
+      path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/_deleted
+      method: GET
+
 com.nokia.eda.management.v1.ssh_server:
   - create:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers
@@ -189,10 +273,10 @@ com.nokia.eda.management.v1.ssh_server_deleted_resources:
       path: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/_deleted
       method: GET
 
-totalPaths: 31
-totalSchemas: 73
-usedSchemas: 19
-unusedSchemas: 54
+totalPaths: 45
+totalSchemas: 87
+usedSchemas: 25
+unusedSchemas: 62
 unusedSchemaList:
   - AppGroupVersion
   - ErrorResponse
@@ -244,6 +328,14 @@ unusedSchemaList:
   - com.nokia.eda.management.v1.HTTPServer_alarms
   - com.nokia.eda.management.v1.HTTPServer_deviations
   - com.nokia.eda.management.v1.HTTPServer_metadata
+  - com.nokia.eda.management.v1.SNMPServerState_DeletedResourceEntry
+  - com.nokia.eda.management.v1.SNMPServerState_alarms
+  - com.nokia.eda.management.v1.SNMPServerState_deviations
+  - com.nokia.eda.management.v1.SNMPServerState_metadata
+  - com.nokia.eda.management.v1.SNMPServer_DeletedResourceEntry
+  - com.nokia.eda.management.v1.SNMPServer_alarms
+  - com.nokia.eda.management.v1.SNMPServer_deviations
+  - com.nokia.eda.management.v1.SNMPServer_metadata
   - com.nokia.eda.management.v1.SSHServer_DeletedResourceEntry
   - com.nokia.eda.management.v1.SSHServer_alarms
   - com.nokia.eda.management.v1.SSHServer_deviations

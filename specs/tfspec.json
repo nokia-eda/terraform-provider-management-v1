@@ -191,33 +191,33 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "enabled",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable the FTP server."
                                     }
                                 },
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "The Kind of the router for the server."
                                     }
                                 },
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -457,33 +457,33 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "enabled",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable the FTP server."
                                                     }
                                                 },
                                                 {
                                                     "name": "router",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Router to associate the server with."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_kind",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "The Kind of the router for the server."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -707,24 +707,24 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "enabled",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "gnmi_server",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "attributes": [
                                             {
                                                 "name": "auto_save",
                                                 "bool": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed",
                                                     "description": "Enable auto-save of configuration changes made via gNMI."
                                                 }
                                             }
@@ -735,56 +735,56 @@
                                 {
                                     "name": "insecure",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Allow insecure (non-TLS) connections to the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "max_concurrent_streams",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Maximum number of concurrent streams for the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "metadata_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable metadata authentication for the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Port for the gRPC server to listen on."
                                     }
                                 },
                                 {
                                     "name": "rate_limit_calls_per_minute",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Rate limit for the gRPC server, in calls per minute."
                                     }
                                 },
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "The Kind of the router for the server."
                                     }
                                 },
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -794,7 +794,7 @@
                                 {
                                     "name": "services",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -804,21 +804,21 @@
                                 {
                                     "name": "session_limit",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Maximum number of gRPC sessions."
                                     }
                                 },
                                 {
                                     "name": "tls_profile",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "TLS profile name."
                                     }
                                 },
                                 {
                                     "name": "yang_models",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "YANG models to be used by the gRPC server."
                                     }
                                 }
@@ -1065,24 +1065,24 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "enabled",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable the gRPC server."
                                                     }
                                                 },
                                                 {
                                                     "name": "gnmi_server",
                                                     "single_nested": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "attributes": [
                                                             {
                                                                 "name": "auto_save",
                                                                 "bool": {
-                                                                    "computed_optional_required": "optional",
+                                                                    "computed_optional_required": "computed",
                                                                     "description": "Enable auto-save of configuration changes made via gNMI."
                                                                 }
                                                             }
@@ -1093,56 +1093,56 @@
                                                 {
                                                     "name": "insecure",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Allow insecure (non-TLS) connections to the gRPC server."
                                                     }
                                                 },
                                                 {
                                                     "name": "max_concurrent_streams",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Maximum number of concurrent streams for the gRPC server."
                                                     }
                                                 },
                                                 {
                                                     "name": "metadata_authentication",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable metadata authentication for the gRPC server."
                                                     }
                                                 },
                                                 {
                                                     "name": "port",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Port for the gRPC server to listen on."
                                                     }
                                                 },
                                                 {
                                                     "name": "rate_limit_calls_per_minute",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Rate limit for the gRPC server, in calls per minute."
                                                     }
                                                 },
                                                 {
                                                     "name": "router",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Router to associate the server with."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_kind",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "The Kind of the router for the server."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1152,7 +1152,7 @@
                                                 {
                                                     "name": "services",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1162,21 +1162,21 @@
                                                 {
                                                     "name": "session_limit",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Maximum number of gRPC sessions."
                                                     }
                                                 },
                                                 {
                                                     "name": "tls_profile",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "TLS profile name."
                                                     }
                                                 },
                                                 {
                                                     "name": "yang_models",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "YANG models to be used by the gRPC server."
                                                     }
                                                 }
@@ -1407,54 +1407,54 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "enable_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable authentication for the HTTP(s) server."
                                     }
                                 },
                                 {
                                     "name": "enabled",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable the HTTP API server."
                                     }
                                 },
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Port for the server to listen on."
                                     }
                                 },
                                 {
                                     "name": "protocol",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Specifies the protocol to use."
                                     }
                                 },
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "The Kind of the router for the server."
                                     }
                                 },
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -1464,14 +1464,14 @@
                                 {
                                     "name": "session_limit",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Maximum number of HTTP(s) sessions."
                                     }
                                 },
                                 {
                                     "name": "tls_profile",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "TLS profile name to use with HTTPS protocol."
                                     }
                                 }
@@ -1708,54 +1708,54 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "enable_authentication",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable authentication for the HTTP(s) server."
                                                     }
                                                 },
                                                 {
                                                     "name": "enabled",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable the HTTP API server."
                                                     }
                                                 },
                                                 {
                                                     "name": "port",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Port for the server to listen on."
                                                     }
                                                 },
                                                 {
                                                     "name": "protocol",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Specifies the protocol to use."
                                                     }
                                                 },
                                                 {
                                                     "name": "router",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Router to associate the server with."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_kind",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "The Kind of the router for the server."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -1765,14 +1765,14 @@
                                                 {
                                                     "name": "session_limit",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Maximum number of HTTP(s) sessions."
                                                     }
                                                 },
                                                 {
                                                     "name": "tls_profile",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "TLS profile name to use with HTTPS protocol."
                                                     }
                                                 }
@@ -1941,6 +1941,1162 @@
             }
         },
         {
+            "name": "snmp_server",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "name of the SNMPServer"
+                        }
+                    },
+                    {
+                        "name": "hash",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "resource content will be returned as it was at the time of this git hash"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "access_permission",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Access level for clients connecting to this SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "authentication_protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The SNMPv3 hash-based authentication protocol used to authenticate messages."
+                                    }
+                                },
+                                {
+                                    "name": "communities",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "access_permission",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Access level for clients using this community."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "client_addresses",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "List of allowed source IPv4 or IPv6 SNMP client addresses for this community. If left empty, all client addresses are allowed."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The SNMP community string. Treated as a shared secret.",
+                                                        "sensitive": true
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of SNMP communities and their allowed source IP addresses. Only applicable when Version is SNMPv2c."
+                                    }
+                                },
+                                {
+                                    "name": "enabled",
+                                    "bool": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Enable the SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "max_packet_size_bytes",
+                                    "int64": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Maximum SNMP packet size in bytes. Supported on SR OS only."
+                                    }
+                                },
+                                {
+                                    "name": "node_user_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "Label selector used to select NodeUsers allowed to authenticate against this SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "node_users",
+                                    "list": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of NodeUsers allowed to authenticate against this SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "privacy_protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The SNMPv3 encryption protocol used to encrypt messages."
+                                    }
+                                },
+                                {
+                                    "name": "protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The transport protocol used by the SNMP server. Use UDP for UDP-only, TCP for TCP-only, or Both to accept SNMP messages over either transport."
+                                    }
+                                },
+                                {
+                                    "name": "router",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Router to associate the server with."
+                                    }
+                                },
+                                {
+                                    "name": "router_kind",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The Kind of the router for the server."
+                                    }
+                                },
+                                {
+                                    "name": "router_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter."
+                                    }
+                                },
+                                {
+                                    "name": "security_level",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The SNMPv3 security level."
+                                    }
+                                },
+                                {
+                                    "name": "streaming",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Enables or disables SNMP streaming. Supported on SR OS only."
+                                    }
+                                },
+                                {
+                                    "name": "version",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "The SNMP protocol version to use for this server. Use SNMPv2c for community-based authentication, or SNMPv3 for user-based authentication with optional authentication and privacy."
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerSpec defines the desired state of SNMPServer"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "down_servers",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "nodes",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "node_name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "operating_system",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of down SNMP servers."
+                                    }
+                                },
+                                {
+                                    "name": "health",
+                                    "int64": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Health score of the SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "health_score_reason",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Reason for the health score."
+                                    }
+                                },
+                                {
+                                    "name": "last_change_time",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Indicates when the SNMP server last changed state."
+                                    }
+                                },
+                                {
+                                    "name": "operational_state",
+                                    "string": {
+                                        "computed_optional_required": "computed",
+                                        "description": "Operational state of the SNMP server."
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerStatus defines the observed state of SNMPServer"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "snmp_server_list",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "fields",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "a comma-separated list of resource fields to fetch/return.  If unspecified, all fields are fetched.  If empty, only key-fields are fetched."
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "an EQL \"where\" expression that will be used to filter the set of resources returned."
+                        }
+                    },
+                    {
+                        "name": "label_selector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "A label selector string to filter the results based on resource labels. If specified multiple times, the union of resources which satisfy a label-selector will be returned."
+                        }
+                    },
+                    {
+                        "name": "labelselector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "Deprecated: a label selector string to filter the results based on CR labels"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "items",
+                        "list_nested": {
+                            "computed_optional_required": "computed",
+                            "nested_object": {
+                                "attributes": [
+                                    {
+                                        "name": "alarms",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "critical",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "major",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "minor",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "warning",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "api_version",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "deviations",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "count",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "kind",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "metadata",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "annotations",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "labels",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "namespace",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "spec",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "access_permission",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Access level for clients connecting to this SNMP server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "authentication_protocol",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The SNMPv3 hash-based authentication protocol used to authenticate messages."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "communities",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "access_permission",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "Access level for clients using this community."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "client_addresses",
+                                                                    "list": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "element_type": {
+                                                                            "string": {}
+                                                                        },
+                                                                        "description": "List of allowed source IPv4 or IPv6 SNMP client addresses for this community. If left empty, all client addresses are allowed."
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "description": "The SNMP community string. Treated as a shared secret.",
+                                                                        "sensitive": true
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "description": "List of SNMP communities and their allowed source IP addresses. Only applicable when Version is SNMPv2c."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "enabled",
+                                                    "bool": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Enable the SNMP server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "max_packet_size_bytes",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Maximum SNMP packet size in bytes. Supported on SR OS only."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_user_selectors",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "Label selector used to select NodeUsers allowed to authenticate against this SNMP server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "node_users",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "List of NodeUsers allowed to authenticate against this SNMP server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "privacy_protocol",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The SNMPv3 encryption protocol used to encrypt messages."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "protocol",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The transport protocol used by the SNMP server. Use UDP for UDP-only, TCP for TCP-only, or Both to accept SNMP messages over either transport."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Router to associate the server with."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router_kind",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The Kind of the router for the server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router_selectors",
+                                                    "list": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "security_level",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The SNMPv3 security level."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "streaming",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Enables or disables SNMP streaming. Supported on SR OS only."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "version",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "The SNMP protocol version to use for this server. Use SNMPv2c for community-based authentication, or SNMPv3 for user-based authentication with optional authentication and privacy."
+                                                    }
+                                                }
+                                            ],
+                                            "description": "SNMPServerSpec defines the desired state of SNMPServer"
+                                        }
+                                    },
+                                    {
+                                        "name": "status",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "down_servers",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "nodes",
+                                                                    "list_nested": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "nested_object": {
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "name": "node_name",
+                                                                                    "string": {
+                                                                                        "computed_optional_required": "computed"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "name": "operating_system",
+                                                                                    "string": {
+                                                                                        "computed_optional_required": "computed"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "router",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        },
+                                                        "description": "List of down SNMP servers."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "health",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Health score of the SNMP server."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "health_score_reason",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Reason for the health score."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "last_change_time",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Indicates when the SNMP server last changed state."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "operational_state",
+                                                    "string": {
+                                                        "computed_optional_required": "computed",
+                                                        "description": "Operational state of the SNMP server."
+                                                    }
+                                                }
+                                            ],
+                                            "description": "SNMPServerStatus defines the observed state of SNMPServer"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "snmp_server_state",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "name of the SNMPServerState"
+                        }
+                    },
+                    {
+                        "name": "hash",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "resource content will be returned as it was at the time of this git hash"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "attributes": [
+                                {
+                                    "name": "enabled",
+                                    "bool": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "router_kind",
+                                    "string": {
+                                        "computed_optional_required": "computed"
+                                    }
+                                },
+                                {
+                                    "name": "servers",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "nodes",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "node_name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "operating_system",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerStateSpec defines the desired state of SNMPServerState"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed",
+                            "description": "SNMPServerStateStatus defines the observed state of SNMPServerState"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "snmp_server_state_list",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "fields",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "a comma-separated list of resource fields to fetch/return.  If unspecified, all fields are fetched.  If empty, only key-fields are fetched."
+                        }
+                    },
+                    {
+                        "name": "filter",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "an EQL \"where\" expression that will be used to filter the set of resources returned."
+                        }
+                    },
+                    {
+                        "name": "label_selector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "A label selector string to filter the results based on resource labels. If specified multiple times, the union of resources which satisfy a label-selector will be returned."
+                        }
+                    },
+                    {
+                        "name": "labelselector",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "Deprecated: a label selector string to filter the results based on CR labels"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "required",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    },
+                    {
+                        "name": "items",
+                        "list_nested": {
+                            "computed_optional_required": "computed",
+                            "nested_object": {
+                                "attributes": [
+                                    {
+                                        "name": "alarms",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "critical",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "major",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "minor",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "warning",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "api_version",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "deviations",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "count",
+                                                    "int64": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "kind",
+                                        "string": {
+                                            "computed_optional_required": "computed"
+                                        }
+                                    },
+                                    {
+                                        "name": "metadata",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "annotations",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "labels",
+                                                    "map": {
+                                                        "computed_optional_required": "computed",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "namespace",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "name": "spec",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "attributes": [
+                                                {
+                                                    "name": "enabled",
+                                                    "bool": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router_kind",
+                                                    "string": {
+                                                        "computed_optional_required": "computed"
+                                                    }
+                                                },
+                                                {
+                                                    "name": "servers",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "nodes",
+                                                                    "list_nested": {
+                                                                        "computed_optional_required": "computed",
+                                                                        "nested_object": {
+                                                                            "attributes": [
+                                                                                {
+                                                                                    "name": "node_name",
+                                                                                    "string": {
+                                                                                        "computed_optional_required": "computed"
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "name": "operating_system",
+                                                                                    "string": {
+                                                                                        "computed_optional_required": "computed"
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "router",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ],
+                                            "description": "SNMPServerStateSpec defines the desired state of SNMPServerState"
+                                        }
+                                    },
+                                    {
+                                        "name": "status",
+                                        "single_nested": {
+                                            "computed_optional_required": "computed",
+                                            "description": "SNMPServerStateStatus defines the observed state of SNMPServerState"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed"
+                        }
+                    }
+                ]
+            }
+        },
+        {
             "name": "ssh_server",
             "schema": {
                 "attributes": [
@@ -2064,47 +3220,47 @@
                     {
                         "name": "spec",
                         "single_nested": {
-                            "computed_optional_required": "optional",
+                            "computed_optional_required": "computed",
                             "attributes": [
                                 {
                                     "name": "enable_password_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed."
                                     }
                                 },
                                 {
                                     "name": "enabled",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Enable the SSH server."
                                     }
                                 },
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Port for the SSH server to listen on."
                                     }
                                 },
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "description": "The Kind of the router for the server."
                                     }
                                 },
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -2344,47 +3500,47 @@
                                     {
                                         "name": "spec",
                                         "single_nested": {
-                                            "computed_optional_required": "optional",
+                                            "computed_optional_required": "computed",
                                             "attributes": [
                                                 {
                                                     "name": "enable_password_authentication",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed."
                                                     }
                                                 },
                                                 {
                                                     "name": "enabled",
                                                     "bool": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Enable the SSH server."
                                                     }
                                                 },
                                                 {
                                                     "name": "port",
                                                     "int64": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Port for the SSH server to listen on."
                                                     }
                                                 },
                                                 {
                                                     "name": "router",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "Router to associate the server with."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_kind",
                                                     "string": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "description": "The Kind of the router for the server."
                                                     }
                                                 },
                                                 {
                                                     "name": "router_selectors",
                                                     "list": {
-                                                        "computed_optional_required": "optional",
+                                                        "computed_optional_required": "computed",
                                                         "element_type": {
                                                             "string": {}
                                                         },
@@ -2665,14 +3821,14 @@
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "The Kind of the router for the server.",
                                         "validators": [
                                             {
@@ -2691,7 +3847,7 @@
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -2750,7 +3906,19 @@
                                     "name": "health",
                                     "int64": {
                                         "computed_optional_required": "computed_optional",
-                                        "description": "Health score of the FTP server."
+                                        "description": "Health score of the FTP server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
                                 {
@@ -2983,12 +4151,12 @@
                                 {
                                     "name": "gnmi_server",
                                     "single_nested": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "attributes": [
                                             {
                                                 "name": "auto_save",
                                                 "bool": {
-                                                    "computed_optional_required": "optional",
+                                                    "computed_optional_required": "computed_optional",
                                                     "description": "Enable auto-save of configuration changes made via gNMI."
                                                 }
                                             }
@@ -2999,14 +4167,14 @@
                                 {
                                     "name": "insecure",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Allow insecure (non-TLS) connections to the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "max_concurrent_streams",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Maximum number of concurrent streams for the gRPC server.",
                                         "validators": [
                                             {
@@ -3025,14 +4193,14 @@
                                 {
                                     "name": "metadata_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Enable metadata authentication for the gRPC server."
                                     }
                                 },
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Port for the gRPC server to listen on.",
                                         "validators": [
                                             {
@@ -3051,7 +4219,7 @@
                                 {
                                     "name": "rate_limit_calls_per_minute",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Rate limit for the gRPC server, in calls per minute.",
                                         "validators": [
                                             {
@@ -3070,14 +4238,14 @@
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "The Kind of the router for the server.",
                                         "validators": [
                                             {
@@ -3096,7 +4264,7 @@
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3106,7 +4274,7 @@
                                 {
                                     "name": "services",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3128,7 +4296,7 @@
                                 {
                                     "name": "session_limit",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Maximum number of gRPC sessions.",
                                         "validators": [
                                             {
@@ -3147,14 +4315,14 @@
                                 {
                                     "name": "tls_profile",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "TLS profile name."
                                     }
                                 },
                                 {
                                     "name": "yang_models",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "YANG models to be used by the gRPC server."
                                     }
                                 }
@@ -3210,7 +4378,19 @@
                                     "name": "health",
                                     "int64": {
                                         "computed_optional_required": "computed_optional",
-                                        "description": "Health score of the gRPC server."
+                                        "description": "Health score of the gRPC server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
                                 {
@@ -3446,7 +4626,7 @@
                                 {
                                     "name": "enable_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Enable authentication for the HTTP(s) server."
                                     }
                                 },
@@ -3460,7 +4640,7 @@
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Port for the server to listen on.",
                                         "validators": [
                                             {
@@ -3498,14 +4678,14 @@
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "The Kind of the router for the server.",
                                         "validators": [
                                             {
@@ -3524,7 +4704,7 @@
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3534,7 +4714,7 @@
                                 {
                                     "name": "session_limit",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Maximum number of HTTP(s) sessions.",
                                         "validators": [
                                             {
@@ -3553,7 +4733,7 @@
                                 {
                                     "name": "tls_profile",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "TLS profile name to use with HTTPS protocol."
                                     }
                                 }
@@ -3609,7 +4789,19 @@
                                     "name": "health",
                                     "int64": {
                                         "computed_optional_required": "computed_optional",
-                                        "description": "Health score of the HTTP server."
+                                        "description": "Health score of the HTTP server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
                                 {
@@ -3654,6 +4846,809 @@
                         "string": {
                             "computed_optional_required": "computed_optional",
                             "description": "name of the HTTPServer"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "snmp_server",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "management.eda.nokia.com/v1"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^management\\\\.eda\\\\.nokia\\\\.com/v1$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "SNMPServer"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^SNMPServer$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "required",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.LengthAtMost(253)"
+                                                }
+                                            },
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "regexp"
+                                                        },
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$\"), \"\")"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "required"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "access_permission",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "default": {
+                                            "static": "Read"
+                                        },
+                                        "description": "Access level for clients connecting to this SNMP server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"Read\",\n\"ReadWrite\",\n\"ReadWriteAll\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "authentication_protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The SNMPv3 hash-based authentication protocol used to authenticate messages.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"MD5\",\n\"SHA1-96\",\n\"SHA2-224\",\n\"SHA2-256\",\n\"SHA2-384\",\n\"SHA2-512\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "communities",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "access_permission",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "Access level for clients using this community.",
+                                                        "validators": [
+                                                            {
+                                                                "custom": {
+                                                                    "imports": [
+                                                                        {
+                                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                                        }
+                                                                    ],
+                                                                    "schema_definition": "stringvalidator.OneOf(\n\"Read\",\n\"ReadWrite\",\n\"ReadWriteAll\",\n)"
+                                                                }
+                                                            }
+                                                        ]
+                                                    }
+                                                },
+                                                {
+                                                    "name": "client_addresses",
+                                                    "list": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "element_type": {
+                                                            "string": {}
+                                                        },
+                                                        "description": "List of allowed source IPv4 or IPv6 SNMP client addresses for this community. If left empty, all client addresses are allowed."
+                                                    }
+                                                },
+                                                {
+                                                    "name": "name",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "description": "The SNMP community string. Treated as a shared secret.",
+                                                        "sensitive": true
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of SNMP communities and their allowed source IP addresses. Only applicable when Version is SNMPv2c."
+                                    }
+                                },
+                                {
+                                    "name": "enabled",
+                                    "bool": {
+                                        "computed_optional_required": "required",
+                                        "description": "Enable the SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "max_packet_size_bytes",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Maximum SNMP packet size in bytes. Supported on SR OS only.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtLeast(1)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "node_user_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "Label selector used to select NodeUsers allowed to authenticate against this SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "node_users",
+                                    "list": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "List of NodeUsers allowed to authenticate against this SNMP server."
+                                    }
+                                },
+                                {
+                                    "name": "privacy_protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The SNMPv3 encryption protocol used to encrypt messages.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"CBC-DES\",\n\"CFB128-AES-128\",\n\"CFB128-AES-192\",\n\"CFB128-AES-256\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "protocol",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "default": {
+                                            "static": "UDP"
+                                        },
+                                        "description": "The transport protocol used by the SNMP server. Use UDP for UDP-only, TCP for TCP-only, or Both to accept SNMP messages over either transport.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"UDP\",\n\"TCP\",\n\"Both\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "router",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Router to associate the server with."
+                                    }
+                                },
+                                {
+                                    "name": "router_kind",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The Kind of the router for the server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"ManagementRouter\",\n\"Router\",\n\"DefaultRouter\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "router_selectors",
+                                    "list": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        },
+                                        "description": "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter."
+                                    }
+                                },
+                                {
+                                    "name": "security_level",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The SNMPv3 security level.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"NoAuth\",\n\"AuthNoPriv\",\n\"AuthPriv\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "streaming",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "default": {
+                                            "static": "Disabled"
+                                        },
+                                        "description": "Enables or disables SNMP streaming. Supported on SR OS only.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"Enabled\",\n\"Disabled\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "version",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "The SNMP protocol version to use for this server. Use SNMPv2c for community-based authentication, or SNMPv3 for user-based authentication with optional authentication and privacy.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"SNMPv2c\",\n\"SNMPv3\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerSpec defines the desired state of SNMPServer"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "down_servers",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "nodes",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "node_name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed_optional"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "operating_system",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed_optional"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional"
+                                                    }
+                                                }
+                                            ]
+                                        },
+                                        "description": "List of down SNMP servers."
+                                    }
+                                },
+                                {
+                                    "name": "health",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Health score of the SNMP server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "health_score_reason",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Reason for the health score."
+                                    }
+                                },
+                                {
+                                    "name": "last_change_time",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Indicates when the SNMP server last changed state."
+                                    }
+                                },
+                                {
+                                    "name": "operational_state",
+                                    "string": {
+                                        "computed_optional_required": "computed_optional",
+                                        "description": "Operational state of the SNMP server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.OneOf(\n\"Up\",\n\"Down\",\n\"Degraded\",\n\"Unknown\",\n)"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerStatus defines the observed state of SNMPServer"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "name of the SNMPServer"
+                        }
+                    },
+                    {
+                        "name": "namespace",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "the namespace scope in which to operate"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "snmp_server_state",
+            "schema": {
+                "attributes": [
+                    {
+                        "name": "alarms",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "critical",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "major",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "minor",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                },
+                                {
+                                    "name": "warning",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "api_version",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "management.eda.nokia.com/v1"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^management\\\\.eda\\\\.nokia\\\\.com/v1$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "deviations",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "attributes": [
+                                {
+                                    "name": "count",
+                                    "int64": {
+                                        "computed_optional_required": "computed_optional"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "kind",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "default": {
+                                "static": "SNMPServerState"
+                            },
+                            "validators": [
+                                {
+                                    "custom": {
+                                        "imports": [
+                                            {
+                                                "path": "regexp"
+                                            },
+                                            {
+                                                "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                            }
+                                        ],
+                                        "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^SNMPServerState$\"), \"\")"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "metadata",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "annotations",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "labels",
+                                    "map": {
+                                        "computed_optional_required": "computed_optional",
+                                        "element_type": {
+                                            "string": {}
+                                        }
+                                    }
+                                },
+                                {
+                                    "name": "name",
+                                    "string": {
+                                        "computed_optional_required": "required",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.LengthAtMost(253)"
+                                                }
+                                            },
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "regexp"
+                                                        },
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/stringvalidator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "stringvalidator.RegexMatches(regexp.MustCompile(\"^[a-z0-9]([-a-z0-9]*[a-z0-9])?(\\\\.[a-z0-9]([-a-z0-9]*[a-z0-9])?)*$\"), \"\")"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                },
+                                {
+                                    "name": "namespace",
+                                    "string": {
+                                        "computed_optional_required": "required"
+                                    }
+                                }
+                            ]
+                        }
+                    },
+                    {
+                        "name": "spec",
+                        "single_nested": {
+                            "computed_optional_required": "required",
+                            "attributes": [
+                                {
+                                    "name": "enabled",
+                                    "bool": {
+                                        "computed_optional_required": "required"
+                                    }
+                                },
+                                {
+                                    "name": "router_kind",
+                                    "string": {
+                                        "computed_optional_required": "required"
+                                    }
+                                },
+                                {
+                                    "name": "servers",
+                                    "list_nested": {
+                                        "computed_optional_required": "computed_optional",
+                                        "nested_object": {
+                                            "attributes": [
+                                                {
+                                                    "name": "nodes",
+                                                    "list_nested": {
+                                                        "computed_optional_required": "computed_optional",
+                                                        "nested_object": {
+                                                            "attributes": [
+                                                                {
+                                                                    "name": "node_name",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed_optional"
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "operating_system",
+                                                                    "string": {
+                                                                        "computed_optional_required": "computed_optional"
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "router",
+                                                    "string": {
+                                                        "computed_optional_required": "computed_optional"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "description": "SNMPServerStateSpec defines the desired state of SNMPServerState"
+                        }
+                    },
+                    {
+                        "name": "status",
+                        "single_nested": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "SNMPServerStateStatus defines the observed state of SNMPServerState"
+                        }
+                    },
+                    {
+                        "name": "name",
+                        "string": {
+                            "computed_optional_required": "computed_optional",
+                            "description": "name of the SNMPServerState"
                         }
                     },
                     {
@@ -3835,7 +5830,7 @@
                                 {
                                     "name": "enable_password_authentication",
                                     "bool": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed."
                                     }
                                 },
@@ -3849,7 +5844,7 @@
                                 {
                                     "name": "port",
                                     "int64": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Port for the SSH server to listen on.",
                                         "validators": [
                                             {
@@ -3868,14 +5863,14 @@
                                 {
                                     "name": "router",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "Router to associate the server with."
                                     }
                                 },
                                 {
                                     "name": "router_kind",
                                     "string": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "description": "The Kind of the router for the server.",
                                         "validators": [
                                             {
@@ -3894,7 +5889,7 @@
                                 {
                                     "name": "router_selectors",
                                     "list": {
-                                        "computed_optional_required": "optional",
+                                        "computed_optional_required": "computed_optional",
                                         "element_type": {
                                             "string": {}
                                         },
@@ -3953,7 +5948,19 @@
                                     "name": "health",
                                     "int64": {
                                         "computed_optional_required": "computed_optional",
-                                        "description": "Health score of the SSH server."
+                                        "description": "Health score of the SSH server.",
+                                        "validators": [
+                                            {
+                                                "custom": {
+                                                    "imports": [
+                                                        {
+                                                            "path": "github.com/hashicorp/terraform-plugin-framework-validators/int64validator"
+                                                        }
+                                                    ],
+                                                    "schema_definition": "int64validator.AtMost(100)"
+                                                }
+                                            }
+                                        ]
                                     }
                                 },
                                 {

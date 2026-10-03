@@ -127,6 +127,7 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 				Attributes: map[string]schema.Attribute{
 					"enable_authentication": schema.BoolAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Enable authentication for the HTTP(s) server.",
 						MarkdownDescription: "Enable authentication for the HTTP(s) server.",
 					},
@@ -137,6 +138,7 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"port": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Port for the server to listen on.",
 						MarkdownDescription: "Port for the server to listen on.",
 						Validators: []validator.Int64{
@@ -156,11 +158,13 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"router": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Router to associate the server with.",
 						MarkdownDescription: "Router to associate the server with.",
 					},
 					"router_kind": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "The Kind of the router for the server.",
 						MarkdownDescription: "The Kind of the router for the server.",
 						Validators: []validator.String{
@@ -174,11 +178,13 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 					"router_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 						MarkdownDescription: "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 					},
 					"session_limit": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Maximum number of HTTP(s) sessions.",
 						MarkdownDescription: "Maximum number of HTTP(s) sessions.",
 						Validators: []validator.Int64{
@@ -187,6 +193,7 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"tls_profile": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "TLS profile name to use with HTTPS protocol.",
 						MarkdownDescription: "TLS profile name to use with HTTPS protocol.",
 					},
@@ -247,6 +254,9 @@ func HttpServerResourceSchema(ctx context.Context) schema.Schema {
 						Computed:            true,
 						Description:         "Health score of the HTTP server.",
 						MarkdownDescription: "Health score of the HTTP server.",
+						Validators: []validator.Int64{
+							int64validator.AtMost(100),
+						},
 					},
 					"health_score_reason": schema.StringAttribute{
 						Optional:            true,

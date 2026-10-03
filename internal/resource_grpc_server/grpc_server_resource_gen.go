@@ -135,6 +135,7 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 						Attributes: map[string]schema.Attribute{
 							"auto_save": schema.BoolAttribute{
 								Optional:            true,
+								Computed:            true,
 								Description:         "Enable auto-save of configuration changes made via gNMI.",
 								MarkdownDescription: "Enable auto-save of configuration changes made via gNMI.",
 							},
@@ -145,16 +146,19 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 							},
 						},
 						Optional:            true,
+						Computed:            true,
 						Description:         "gNMI server specific configuration.",
 						MarkdownDescription: "gNMI server specific configuration.",
 					},
 					"insecure": schema.BoolAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Allow insecure (non-TLS) connections to the gRPC server.",
 						MarkdownDescription: "Allow insecure (non-TLS) connections to the gRPC server.",
 					},
 					"max_concurrent_streams": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Maximum number of concurrent streams for the gRPC server.",
 						MarkdownDescription: "Maximum number of concurrent streams for the gRPC server.",
 						Validators: []validator.Int64{
@@ -163,11 +167,13 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"metadata_authentication": schema.BoolAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Enable metadata authentication for the gRPC server.",
 						MarkdownDescription: "Enable metadata authentication for the gRPC server.",
 					},
 					"port": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Port for the gRPC server to listen on.",
 						MarkdownDescription: "Port for the gRPC server to listen on.",
 						Validators: []validator.Int64{
@@ -176,6 +182,7 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"rate_limit_calls_per_minute": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Rate limit for the gRPC server, in calls per minute.",
 						MarkdownDescription: "Rate limit for the gRPC server, in calls per minute.",
 						Validators: []validator.Int64{
@@ -184,11 +191,13 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"router": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Router to associate the server with.",
 						MarkdownDescription: "Router to associate the server with.",
 					},
 					"router_kind": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "The Kind of the router for the server.",
 						MarkdownDescription: "The Kind of the router for the server.",
 						Validators: []validator.String{
@@ -202,12 +211,14 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					"router_selectors": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 						MarkdownDescription: "Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.",
 					},
 					"services": schema.ListAttribute{
 						ElementType:         types.StringType,
 						Optional:            true,
+						Computed:            true,
 						Description:         "Enabled gRPC services.",
 						MarkdownDescription: "Enabled gRPC services.",
 						Validators: []validator.List{
@@ -216,6 +227,7 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"session_limit": schema.Int64Attribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "Maximum number of gRPC sessions.",
 						MarkdownDescription: "Maximum number of gRPC sessions.",
 						Validators: []validator.Int64{
@@ -224,11 +236,13 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 					},
 					"tls_profile": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "TLS profile name.",
 						MarkdownDescription: "TLS profile name.",
 					},
 					"yang_models": schema.StringAttribute{
 						Optional:            true,
+						Computed:            true,
 						Description:         "YANG models to be used by the gRPC server.",
 						MarkdownDescription: "YANG models to be used by the gRPC server.",
 					},
@@ -289,6 +303,9 @@ func GrpcServerResourceSchema(ctx context.Context) schema.Schema {
 						Computed:            true,
 						Description:         "Health score of the gRPC server.",
 						MarkdownDescription: "Health score of the gRPC server.",
+						Validators: []validator.Int64{
+							int64validator.AtMost(100),
+						},
 					},
 					"health_score_reason": schema.StringAttribute{
 						Optional:            true,

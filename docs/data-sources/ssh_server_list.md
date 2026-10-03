@@ -35,10 +35,6 @@ description: |-
 <a id="nestedatt--items"></a>
 ### Nested Schema for `items`
 
-Optional:
-
-- `spec` (Attributes) SSHServerSpec defines the desired state of SSHServer (see [below for nested schema](#nestedatt--items--spec))
-
 Read-Only:
 
 - `alarms` (Attributes) (see [below for nested schema](#nestedatt--items--alarms))
@@ -46,20 +42,8 @@ Read-Only:
 - `deviations` (Attributes) (see [below for nested schema](#nestedatt--items--deviations))
 - `kind` (String)
 - `metadata` (Attributes) (see [below for nested schema](#nestedatt--items--metadata))
+- `spec` (Attributes) SSHServerSpec defines the desired state of SSHServer (see [below for nested schema](#nestedatt--items--spec))
 - `status` (Attributes) SSHServerStatus defines the observed state of SSHServer (see [below for nested schema](#nestedatt--items--status))
-
-<a id="nestedatt--items--spec"></a>
-### Nested Schema for `items.spec`
-
-Optional:
-
-- `enable_password_authentication` (Boolean) Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.
-- `enabled` (Boolean) Enable the SSH server.
-- `port` (Number) Port for the SSH server to listen on.
-- `router` (String) Router to associate the server with.
-- `router_kind` (String) The Kind of the router for the server.
-- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
-
 
 <a id="nestedatt--items--alarms"></a>
 ### Nested Schema for `items.alarms`
@@ -89,6 +73,19 @@ Read-Only:
 - `labels` (Map of String)
 - `name` (String)
 - `namespace` (String)
+
+
+<a id="nestedatt--items--spec"></a>
+### Nested Schema for `items.spec`
+
+Read-Only:
+
+- `enable_password_authentication` (Boolean) Enable password authentication for the SSH server. If disabled, only key-based authentication will be allowed.
+- `enabled` (Boolean) Enable the SSH server.
+- `port` (Number) Port for the SSH server to listen on.
+- `router` (String) Router to associate the server with.
+- `router_kind` (String) The Kind of the router for the server.
+- `router_selectors` (List of String) Selects router resources based on the defined Kind.  Applies to DefaultRouter only. Not supported for Router and ManagementRouter.
 
 
 <a id="nestedatt--items--status"></a>

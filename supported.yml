@@ -23,6 +23,18 @@ datasources:
   - model_name: http_server
     oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/{name}
     oas_schema: com.nokia.eda.management.v1.HTTPServer
+  - model_name: snmp_server_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers
+    oas_schema: com.nokia.eda.management.v1.SNMPServerList
+  - model_name: snmp_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/{name}
+    oas_schema: com.nokia.eda.management.v1.SNMPServer
+  - model_name: snmp_server_state_list
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates
+    oas_schema: com.nokia.eda.management.v1.SNMPServerStateList
+  - model_name: snmp_server_state
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/{name}
+    oas_schema: com.nokia.eda.management.v1.SNMPServerState
   - model_name: ssh_server_list
     oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers
     oas_schema: com.nokia.eda.management.v1.SSHServerList
@@ -40,6 +52,12 @@ resources:
   - model_name: http_server
     oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers
     oas_schema: com.nokia.eda.management.v1.HTTPServer
+  - model_name: snmp_server
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers
+    oas_schema: com.nokia.eda.management.v1.SNMPServer
+  - model_name: snmp_server_state
+    oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates
+    oas_schema: com.nokia.eda.management.v1.SNMPServerState
   - model_name: ssh_server
     oas_endpoint: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers
     oas_schema: com.nokia.eda.management.v1.SSHServer
@@ -58,6 +76,10 @@ qualified:
       get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/grpcservers/_deleted
     - oas_schema: com.nokia.eda.management.v1.HTTPServer_DeletedResources
       get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/httpservers/_deleted
+    - oas_schema: com.nokia.eda.management.v1.SNMPServerState_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpserverstates/_deleted
+    - oas_schema: com.nokia.eda.management.v1.SNMPServer_DeletedResources
+      get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/snmpservers/_deleted
     - oas_schema: com.nokia.eda.management.v1.SSHServer_DeletedResources
       get: /apps/management.eda.nokia.com/v1/namespaces/{namespace}/sshservers/_deleted
   resources:
